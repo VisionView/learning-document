@@ -1,0 +1,29 @@
+{
+  "name": "learning-document",
+  "version": "0.0.1",
+  "description": "A full stack learning website",
+  "author": "Wee <davewee2060@gmail.com>",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.7.3",
+    "eslint": "^9.39.2",
+    "eslint-plugin-format": "^1.1.0",
+    "lint-staged": "^16.2.7",
+    "simple-git-hooks": "^2.13.1",
+    "vitepress": "2.0.0-alpha.15"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md,json}": [
+      "eslint --cache --fix"
+    ]
+  }
+}

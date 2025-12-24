@@ -1,0 +1,6 @@
+dist
+node_modules
+.vitepress/cache
+!.vscode/settings.json
+
+.eslintcache
