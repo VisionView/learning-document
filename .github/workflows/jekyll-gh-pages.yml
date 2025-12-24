@@ -1,3 +1,5 @@
+# 部署 VitePress 站点到 GitHub Pages 的工作流配置
+# 该工作流会在推送到 master 分支时自动触发，也支持手动触发
 name: Deploy VitePress site to Pages
 
 on:
@@ -5,11 +7,13 @@ on:
     branches: [master] # 推送到 master 分支时触发
   workflow_dispatch: # 允许手动触发
 
+# 配置工作流所需的权限
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# 配置并发执行策略
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -24,9 +28,11 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 24 # 使用 Node  24
-          cache: npm
+          cache: pnpm
       - name: Install PNPM
-        run: npm install pnpm -g
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Install dependencies
         run: pnpm install
       - name: Build with VitePress
