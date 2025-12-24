@@ -1,11 +1,12 @@
 # 部署 VitePress 站点到 GitHub Pages 的工作流配置
 # 该工作流会在推送到 master 分支时自动触发，也支持手动触发
-name: Deploy VitePress site to Pages
+name: Deploy
 
+# 触发工作流的事件
 on:
-  push:
-    branches: [master] # 推送到 master 分支时触发
-  workflow_dispatch: # 允许手动触发
+  label:
+    types:
+      - created # 创建标签
 
 # 配置工作流所需的权限
 permissions:

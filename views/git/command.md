@@ -130,7 +130,7 @@ git checkout <branch/tag>
 # 示例：git checkout dev
 
 # 列出所有本地标签
-get tag
+git tag
 
 # 基于最新提交创建标签
 git tag <tagname>
