@@ -5,8 +5,6 @@ name: Deploy
 # 当推送事件同时满足分支规则和标签规则时触发
 on:
   push:
-    branches:
-      - master
     tags:
       - 'v*'
 
