@@ -2,11 +2,13 @@
 # 该工作流会在推送到 master 分支时自动触发，也支持手动触发
 name: Deploy
 
-# 触发工作流的事件
+# 当推送事件同时满足分支规则和标签规则时触发
 on:
-  label:
-    types:
-      - created # 创建标签
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*'
 
 # 配置工作流所需的权限
 permissions:
