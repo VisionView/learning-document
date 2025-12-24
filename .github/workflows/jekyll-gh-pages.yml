@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 24 # 使用 Node  24
-          cache: pnpm # 使用 pnpm
+          cache: npm
       - name: Install PNPM
         run: npm install pnpm -g
       - name: Install dependencies
