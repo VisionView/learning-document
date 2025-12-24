@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A full stack learning website",
   "author": "Wee <davewee2060@gmail.com>",
+  "engines": {
+    "node": ">=24.9.0"
+  },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
