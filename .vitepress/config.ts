@@ -5,6 +5,7 @@ import { nav } from './nav'
 export default defineConfig({
   title: "全栈学习站",
   description: "A VitePress Site",
+  base: '/learning-document/',
   themeConfig: {
     nav,
     sidebar,

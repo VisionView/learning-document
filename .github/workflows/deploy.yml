@@ -26,7 +26,7 @@ jobs:
           node-version: 20
           cache: npm
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build with VitePress
         run: npm run build # 执行 package.json 中的构建脚本
       - name: Upload artifact
