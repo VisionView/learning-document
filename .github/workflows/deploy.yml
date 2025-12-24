@@ -5,8 +5,10 @@ name: Deploy
 # 当推送事件同时满足分支规则和标签规则时触发
 on:
   push:
+    branches:
+      - master
     tags:
-      - 'v*'
+      - 'v[0-9]+.[0-9]+.[0-9]+'
 
 # 配置工作流所需的权限
 permissions:
@@ -39,3 +41,14 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist # 上传构建好的静态文件
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
