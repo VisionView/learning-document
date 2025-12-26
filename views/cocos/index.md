@@ -1,5 +1,5 @@
 # Cocos Creator 3.X
 
-> 在学习此文档之前，请先阅读 [Cocos 官方文档](https://docs.cocos.com/)。
+> 在阅读此模块前，请确保已阅读并熟悉 [Cocos 官方文档](https://docs.cocos.com/)。
 >
-> 官方文档已经非常详细，所以本文档仅作为 Cocos 官方文档的`补充说明`。
+> 此模块仅作为实战应用的奇技淫巧分享。

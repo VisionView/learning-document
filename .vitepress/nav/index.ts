@@ -6,6 +6,12 @@ export const nav: DefaultTheme.NavItem[] = [
     link: '/views/git/'
   },
   {
+    text: '前端',
+    items: [
+      { text: 'Vue.js', link: '/views/vuejs/' }
+    ]
+  },
+  {
     text: '后端',
     items: [
       { text: 'NestJS', link: '/views/nestjs/' }
@@ -15,6 +21,14 @@ export const nav: DefaultTheme.NavItem[] = [
     text: '数据库',
     items: [
       { text: 'PostgreSQL', link: '/views/pgsql/' }
+    ]
+  },
+  {
+    text: '运维',
+    items: [
+      { text: 'Docker', link: '/views/docker/' },
+      { text: 'Nginx', link: '/views/nginx/' },
+      { text: 'Serverless', link: '/views/serverless/' },
     ]
   },
   {

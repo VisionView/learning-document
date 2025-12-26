@@ -34,6 +34,10 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '技术交流平台',
       link: '/views/community/exchange'
+    },
+    {
+      text: '比对工具',
+      link: '/views/community/compare'
     }
   ],
 }
