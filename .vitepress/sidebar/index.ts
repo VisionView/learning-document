@@ -40,4 +40,20 @@ export const sidebar: DefaultTheme.Sidebar = {
       link: '/views/community/compare'
     }
   ],
+  '/views/langchain/': [
+    {
+      text: '前言',
+      link: '/views/langchain/'
+    },
+    {
+      text: 'Deep Agents',
+      collapsed: false,
+      items: [
+        {
+          text: '简介',
+          link: '/views/langchain/deep-agents/'
+        }
+      ]
+    }
+  ]
 }

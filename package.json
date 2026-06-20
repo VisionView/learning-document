@@ -1,6 +1,6 @@
 {
   "name": "learning-document",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A full stack learning website",
   "author": "Wee <davewee2060@gmail.com>",
   "engines": {
@@ -14,12 +14,12 @@
     "lint:fix": "eslint --cache --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.7.3",
-    "eslint": "^9.39.2",
-    "eslint-plugin-format": "^1.1.0",
-    "lint-staged": "^16.2.7",
+    "@antfu/eslint-config": "^9.0.0",
+    "eslint": "^10.5.0",
+    "eslint-plugin-format": "^2.0.1",
+    "lint-staged": "^17.0.7",
     "simple-git-hooks": "^2.13.1",
-    "vitepress": "2.0.0-alpha.15"
+    "vitepress": "2.0.0-alpha.17"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

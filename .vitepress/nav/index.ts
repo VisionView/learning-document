@@ -6,15 +6,11 @@ export const nav: DefaultTheme.NavItem[] = [
     link: '/views/git/'
   },
   {
-    text: '前端',
+    text: '全栈',
     items: [
-      { text: 'Vue.js', link: '/views/vuejs/' }
-    ]
-  },
-  {
-    text: '后端',
-    items: [
-      { text: 'NestJS', link: '/views/nestjs/' }
+      { text: 'Vue.js', link: '/views/vuejs/' },
+      { text: 'NestJS', link: '/views/nestjs/' },
+      { text: 'Langchain', link: '/views/langchain/' }
     ]
   },
   {
